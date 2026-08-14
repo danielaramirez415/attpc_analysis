@@ -1,0 +1,6 @@
+{
+    "workspace_path": "/mnt/analysis/argonne2023/ramirezc/a2066/workspace_369_tune_pad/", 
+    "read_csv": true,
+    "path_to_csv": "/projects/attpc/ramirezc/spyral_viewer/attpc_analysis/personal_analysis/coin_he3_he3_d.csv",
+    "save_in_folder": "/projects/attpc/ramirezc/spyral_viewer/attpc_analysis/personal_analysis/plots_d_3He_3He/" 
+}
