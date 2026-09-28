@@ -1,0 +1,7 @@
+{
+    "trace_path": "/your/trace_path_folder/", 
+    "run_number": 47,
+    "single_OR_multiple": "single",
+    "default_event": 3783,
+    "cutoff_diff": 300
+}

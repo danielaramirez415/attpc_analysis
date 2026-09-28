@@ -55,7 +55,7 @@ class RunClusterDataLoader:
         if event_group is None: 
             return None
         local_cluster = event_group[f"cluster_{cluster_index}"]
-        cluster = Cluster(event,local_cluster.attrs["label"], local_cluster["cloud"][:].copy())
+        cluster = Cluster(event,local_cluster.attrs["label"], Direction(local_cluster.attrs["direction"]),local_cluster["cloud"][:].copy())
         return cluster
 
     def load_clusters(self, run: int, event: int) -> list[Cluster] | None:

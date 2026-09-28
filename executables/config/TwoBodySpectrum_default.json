@@ -1,0 +1,14 @@
+{
+    "workspace_path": "/your/workspace_folder_path/", 
+    "target_path": "/your/gas_target_file/gasfile.json", 
+    "pid_path":"/your/folder/with_pids",
+    "pid_gates": ["hydrogen_1.json", "hydrogen_2.json"],
+    "run_min": 47,
+    "run_max": 74, 
+    "projectile": [4,7],
+    "target": [1,2],
+    "beam_energy": 98,
+    "particle_1_Z_A": [2,3], 
+    "particle_2_Z_A": [2,3]
+
+}

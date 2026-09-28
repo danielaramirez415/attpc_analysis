@@ -18,6 +18,7 @@ if len(sys.argv)>1:
         read_csv = json_data["read_csv"] # type: bool
         path_to_csv = Path(json_data["path_to_csv"])
         output_folder = Path(json_data["save_in_folder"]) # type: str
+        cluster_size_min = int(json_data["cluster_size_min"])
 
 else: 
     raise Exception(f"Execute: python cluster_viewer.py config.json")
@@ -133,6 +134,7 @@ for nfile in range(0,files_created):
             axs["A"].scatter(cloud.data[:,2], cloud.data[:,0], cloud.data[:,1],color='black', s=1)
             axs["B"].scatter(cloud.data[:,0], cloud.data[:,1],color='black', s=1)
             for cluster in clusters: 
+                if len(cluster.data[:,2]) < cluster_size_min: continue 
                 axs["A"].scatter(cluster.data[:,2], cluster.data[:,0], cluster.data[:,1],color=get_color(cluster.label), s=3, label=f"Cluster {cluster.label}")
                 axs["B"].scatter(cluster.data[:,0], cluster.data[:,1], color=get_color(cluster.label), s=3, label=f"Cluster {cluster.label}")
             # Draw Detector: 
