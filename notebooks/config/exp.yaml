@@ -1,0 +1,21 @@
+paths_to_experiment: 
+  workspace_path: "/path/to/your/workspace/folder/"
+  trace_path: "/path/to/your/raw/data/folder"
+  target_path:   "/path/to/your/json/gas/target/file"
+
+runs: 
+  run_min: 47
+  run_max: 74
+  runs_to_skip : [59]
+
+experiment_details: 
+  beam_energy: 97.7 #MeV
+  beam: [4,7] #[Z,A]
+  target: [1,2]
+  targetlike: [1,2]
+
+
+detector_settings:
+  ic_pressure: 600
+  ic_min_val: 420
+  ic_max_val : 600

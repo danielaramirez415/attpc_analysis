@@ -108,7 +108,8 @@ class EnergyLossSetup:
             self.ic_window_compound,
             self.ic_window_thickness,
             self.ic_gas_compound,
-            self.ic_gas_thickness
+            self.ic_gas_thickness,
+            self.ic_gas_pressure
         )
 
         attpc_details = EnergyLossATTPC(

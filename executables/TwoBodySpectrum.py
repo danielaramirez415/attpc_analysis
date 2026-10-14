@@ -36,8 +36,9 @@ if str(src_path) not in sys.path:
     sys.path.insert(0, str(src_path))
 from attpc_analysis.src.tinker.window_view import make_input_form
 from attpc_analysis.src.load.io import RunSolverDataLoader, RunPointCloudDataLoader, RunClusterDataLoader, RunEstimationDataLoader
-from attpc_analysis.src.data_models.physics import DataReactionKinematics
+from attpc_analysis.src.data_models.physics import DataReactionKinematics, invariant_mass_technique
 from attpc_analysis.src.detector_settings.energy_loss_setup import EnergyLossSetup
+
 
 from spyral_utils.nuclear.nuclear_map import NuclearDataMap
 from spyral_utils.nuclear.particle_id import deserialize_particle_id
@@ -208,7 +209,7 @@ def import_and_physics(workspace_path, target_material_path, run_min, run_max, p
             targetlike_vector1 = targetlike_vector[::2]
             targetlike_vector2 = targetlike_vector[1::2]
 
-            energy_spectrum = reaction.invariant_mass_technique([targetlike_vector1, targetlike_vector2], nuclear_map.get_data(int(particle_1.Z*2), int(particle_2.A*2)))
+            energy_spectrum = invariant_mass_technique([targetlike_vector1, targetlike_vector2], nuclear_map.get_data(int(particle_1.Z*2), int(particle_2.A*2)))
         # If one particle is different that the other, 
         else:
             # Select events with the two particles 
@@ -256,7 +257,7 @@ def import_and_physics(workspace_path, target_material_path, run_min, run_max, p
             # Do physics 
             targetlike_vector1 = reaction_p1.construct_targetlike_vector()
             targetlike_vector2 = reaction_p2.construct_targetlike_vector()
-            energy_spectrum = reaction_p1.invariant_mass_technique([targetlike_vector1, targetlike_vector2], nuclear_map.get_data(int(particle_1.Z) + int(particle_2.Z), int(particle_1.A) + int(particle_2.A)))
+            energy_spectrum = invariant_mass_technique([targetlike_vector1, targetlike_vector2], nuclear_map.get_data(int(particle_1.Z) + int(particle_2.Z), int(particle_1.A) + int(particle_2.A)))
             
             
         # Save information 

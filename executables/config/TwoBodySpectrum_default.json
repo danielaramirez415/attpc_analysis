@@ -1,8 +1,8 @@
 {
-    "workspace_path": "/your/workspace_folder_path/", 
-    "target_path": "/your/gas_target_file/gasfile.json", 
-    "pid_path":"/your/folder/with_pids",
-    "pid_gates": ["hydrogen_1.json", "hydrogen_2.json"],
+    "workspace_path": "/mnt/analysis/argonne2023/ramirezc/a2066/workspace_369_sept11/", 
+    "target_path": "/projects/attpc/ramirezc/a2066/gasfile.json", 
+    "pid_path":"/mnt/analysis/argonne2023/ramirezc/a2066/workspace_369_tune_pad/",
+    "pid_gates": ["hydrogen_1.json", "hydrogen_2.json", "hydrogen_3_t.json", "helium_3.json", "helium_4.json"],
     "run_min": 47,
     "run_max": 74, 
     "projectile": [4,7],

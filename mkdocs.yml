@@ -1,0 +1,51 @@
+site_name: ATTPC Analysis
+site_url: https://danielaramirez415.github.io/attpc_analysis/
+repo_url: https://github.com/danielaramirez415/attpc_analysis
+site_description: A Python analysis library with classes that reduce the coding part from spyral_notebooks emphasizing the physics.
+site_author: Daniela Ramirez
+
+
+nav: 
+- Home: index.md 
+- Getting Started: 
+  - Intallation: getting_started/installation.md
+  - Analysis Overview: getting_started/analysis_overview.md
+- User Guide: 
+  - Configuration Files: user_guide/configuration.md
+- API Reference: 
+  - Data Models:
+    - Physics: api/data_models/physics.md
+  - Load:
+    - IO: api/load/io.md
+
+# For designing the website format
+theme: 
+  name: material
+  palette: 
+    primary: teal
+    accent: navy
+  icon: 
+    admonition:
+      note: octicons/tag-16
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+# plugin for assigni paths in the API
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [..]
+          options: 
+            docstring_style: numpy
+            show_source: true
+            show_signature: true
+            separate_signature: true

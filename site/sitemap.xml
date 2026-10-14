@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://danielaramirez415.github.io/attpc_analysis/</loc>
+         <lastmod>2026-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://danielaramirez415.github.io/attpc_analysis/api/data_models/physics/</loc>
+         <lastmod>2026-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://danielaramirez415.github.io/attpc_analysis/api/load/io/</loc>
+         <lastmod>2026-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://danielaramirez415.github.io/attpc_analysis/getting_started/analysis_overview/</loc>
+         <lastmod>2026-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://danielaramirez415.github.io/attpc_analysis/getting_started/installation/</loc>
+         <lastmod>2026-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://danielaramirez415.github.io/attpc_analysis/user_guide/configuration/</loc>
+         <lastmod>2026-10-14</lastmod>
+    </url>
+</urlset>

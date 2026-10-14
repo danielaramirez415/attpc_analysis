@@ -2,7 +2,6 @@ from dataclasses import dataclass
 from spyral_utils.nuclear.nuclear_map import NucleusData
 import numpy as np 
 
-
 @dataclass 
 class selection_rules_reaction:
     beam_spin: int
@@ -23,3 +22,4 @@ class selection_rules_reaction:
 #     daughters_parities: tuple[int]
 
 #     def 
+
